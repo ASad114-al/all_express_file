@@ -1,0 +1,26 @@
+[
+    {
+        "firstName": "Asad",
+        "lastName": "Ali",
+        "age": "",
+        "gender": "male"
+    },
+    {
+        "firstName": "Asad",
+        "lastName": "Ali",
+        "age": "18",
+        "gender": "male"
+    },
+    {
+        "firstName": "Bido",
+        "lastName": "Saleh",
+        "age": "23",
+        "gender": "fmale"
+    },
+    {
+        "firstName": "aos",
+        "lastName": "aos",
+        "age": "18",
+        "gender": "male"
+    }
+]

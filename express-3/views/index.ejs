@@ -1,0 +1,30 @@
+<%- ('./partials/head') %> 
+<%- include('./partials/navigation') %> 
+
+    <%#const myTitel= "das ist mein Titel!" %>
+   
+    <h1>
+        <%#=myTitel %>
+        <%=title %> 
+       
+    </h1>
+    <h2>
+      <%=msg %> 
+    </h2>
+    <%  if(isLoggedin){ %> 
+        <p> User: <%= userName  %> is logged in</p>
+  <% }else{ %> 
+    <p>want to login</p>
+    <% } %> 
+    <div>
+        <% data.forEach(hero=> { %> 
+            <p>
+                <%= hero.name %> 
+                ist
+                <%= hero.age %> 
+                jahre alt
+            </p>
+        <%}) %>
+    </div>
+    <%- include('./partials/footer') %> 
+

@@ -1,0 +1,27 @@
+<%- include('./partials/header') %> 
+<h1>index</h1>
+<!-- <nav>
+    <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="./users">user</a></li>
+    </ul>
+</nav> -->
+
+<form action="/add" method="POST">
+    <input type="text" name='firstName' placeholder="FirstName"> <br>
+    <input type="text" name='lastName' placeholder="LastName"><br>
+    <input type="number" name='age' placeholder="Age"><br>
+    <label for="">male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="">female</label>
+    <input type="radio" name="gender" id="female" value="fmale">
+<br>
+    <input type="submit" value="submit">
+</form>
+
+<% if(msg){ %>
+    <p>
+        <%= msg %> 
+    </p> 
+    <%  }%> 
+<%- include('./partials/footer') %> 
